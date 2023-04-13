@@ -1,0 +1,2 @@
+cd device/refrigerator
+./refrigerator

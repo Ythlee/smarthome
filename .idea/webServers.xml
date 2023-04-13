@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="07c6bf52-dc14-4644-ae08-6f858ed40b49" name="aliyun">
+        <fileTransfer rootFolder="/home/yangcan/Workspaces/smarthome_0" accessType="SFTP" host="120.27.208.180" port="22" sshConfigId="3341291d-6bbc-4333-b860-55b5ea4dd411" sshConfig="yangcan@120.27.208.180:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
