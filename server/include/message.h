@@ -1,5 +1,7 @@
 #ifndef INCLUDE_MESSAGE_H
 #define INCLUDE_MESSAGE_H
+
+
 /*==================================Server Port Number========================================*/
 #define SERVER_MASTER_IP     "127.0.0.1"
 #define SERVER_USER_PORT     20000
@@ -164,22 +166,22 @@
 #define MSG_HEADER_STABLE_LEN 5
 #define MSG_DATA_MAX_LEN 512
 typedef struct {
-	int version:4;
-    int header_len:4;
-    int encrypt_type:4;
-    int protocol_type:4;
-    int total_len:16;
-    int data_type:8;
-    int seq_num:8;
-    int frag_flag:3;
-    int frag_offset:13;
-    int custom1:8;
-    int custom2:8;
-    int header_chk:16;
+    int version: 4;
+    int header_len: 4;
+    int encrypt_type: 4;
+    int protocol_type: 4;
+    int total_len: 16;
+    int data_type: 8;
+    int seq_num: 8;
+    int frag_flag: 3;
+    int frag_offset: 13;
+    int custom1: 8;
+    int custom2: 8;
+    int header_chk: 16;
     int source_addr;
     int target_addr;
-	char data[MSG_DATA_MAX_LEN];
-}MsgStruct;
+    char data[MSG_DATA_MAX_LEN];
+} MsgStruct;
 /*==========================================================================================*/
 
 #endif
